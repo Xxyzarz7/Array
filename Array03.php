@@ -1,0 +1,32 @@
+<?php
+//manual
+//pengulangan php
+//for / foreach
+
+$angka = [23,56,8,90,34,1,43, 987];
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan pengulangan</title>
+    <style>
+        div{
+            width: 50px;
+            height: 50px;
+            background-color:cyan;
+            text-align:center;
+            line-height:50px;
+            /* biar text kebawah */
+            margin: 3px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <?php for( $i=0; $i< 7; $i++ ) { ?>
+        <div> <?= $angka[$i]; ?> </div>
+        <?php } ?>
+</body>
+</html>
